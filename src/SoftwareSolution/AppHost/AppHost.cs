@@ -23,4 +23,7 @@ scalar.WithApiReference(softwareApi);
 scalar.WithApiReference(notificationApi);
 
 
+builder.AddProject<Projects.Gateway>("gateway").WithReference(softwareApi);
+
+
 builder.Build().Run();
